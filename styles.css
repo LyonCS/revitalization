@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.webp'); /* 替换为你的背景图片路径 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 其他样式保持不变 */
+
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-title {
+    font-family: "Microsoft YaHei", "宋体", sans-serif; /* 正楷体 */
+    margin: 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    background-color: #D2B48C; /* 鼠标悬停时按钮背景颜色 */
+    color: #fff;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap; /* 允许商品换行 */
+    justify-content: space-between;
+}
+
+.product {
+    width: calc(30% - 50px); /* 一行显示三个商品，并留有间距 */
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; /* 设置商品框圆角 */
+    transition: transform 0.3s; /* 添加过渡效果 */
+    background-color: #e0d2c0 
+}
+
+.product:hover {
+    transform: scale(1.05); /* 鼠标悬停时放大商品框 */
+}
+
+
+.product img {
+    width: 50%; /* 图片宽度铺满商品框 */
+    height: auto;
+    border-radius: 10px; /* 图片也应用圆角 */
+}
+
+.price {
+    font-size: 16px;
+    color: #666;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#cart-icon {
+    position: relative;
+    margin-right: 20px;
+}
+
+#cart {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px; /* 调整购物车容器的宽度 */
+}
+
+#cart.show {
+    display: block;
+}
+
+#cart h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 5px;
+}
+
+button {
+    cursor: pointer;
+    display: block;
+    margin: 10px auto; /* 让按钮水平居中，并设置垂直间距 */
+    width: 200px; /* 设置按钮宽度 */
+    background-color: #D2B48C; /* 设置按钮背景颜色为棕色 */
+    color: #fff; /* 设置文字颜色为白色 */
+    border: none; /* 移除按钮边框 */
+    padding: 10px; /* 设置按钮内边距 */
+    border-radius: 5px; /* 设置按钮圆角 */
+}
+
+#cart-icon img {
+    width: 30px; /* 调整购物车图标的宽度 */
+    height: auto; /* 高度自适应，保持长宽比 */
+}
+#footer-button {
+    display: block;
+    margin: 50px auto; /* 居中 */
+    padding: 10px 20px;
+    background-color: #D2B48C; /* 按钮背景颜色 */
+    color: #fff;
+    text-decoration: none; /* 去掉下划线 */
+    font-size: 16px;
+    border-radius: 5px;
+}
